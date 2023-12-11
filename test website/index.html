@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dhurjati&family=Permanent+Marker&family=Poppins:ital,wght@0,300;1,600;1,800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Dhurjati', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    #countdown {
+      font-size: 15em;
+      margin-bottom: 20px;
+    }
+
+    #redirect-link {
+      display: none;
+      font-size: 1.5em;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30% 30%/80% 80%;
+      background: #924eff;
+      transition: background 0.3s ease-in-out;
+    }
+    #redirect-link:hover {
+      background: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="countdown">5</div>
+  <a href="#" id="redirect-link">happy birthday, klik inii</a>
+
+  <script>
+    // Fungsi hitung mundur
+    function countdown() {
+      var counter = 5;
+      var countdownElement = document.getElementById('countdown');
+      var redirectLink = document.getElementById('redirect-link');
+
+      var countdownInterval = setInterval(function() {
+        counter--;
+        countdownElement.textContent = counter;
+
+        if (counter === 0) {
+          clearInterval(countdownInterval);
+          redirectLink.style.display = 'inline';
+          // Ganti URL pada href dengan URL yang diinginkan
+          redirectLink.href = 'index1.html'; 
+        }
+      }, 1000); // Hitung mundur setiap 1 detik
+    }
+
+    // Panggil fungsi hitung mundur saat halaman dimuat
+    window.onload = function() {
+      countdown();
+    };
+  </script>
+
+</body>
+</html>

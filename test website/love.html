@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Image</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #8e44ad; /* Warna latar belakang ungu */
+    }
+
+    #love {
+      font-size: 5em;
+      color: #fff; /* Warna tulisan putih */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="love">❤️</div>
+
+  <script>
+    // Fungsi untuk mengubah warna menjadi ungu
+    function changeColor() {
+      var loveElement = document.getElementById('love');
+      loveElement.style.color = '#8e44ad'; // Warna ungu
+    }
+
+    // Panggil fungsi saat halaman dimuat
+    window.onload = function() {
+      changeColor();
+    };
+  </script>
+
+</body>
+</html>

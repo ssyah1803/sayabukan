@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery2.css">
+    <title>My Purple Page</title>
+</head>
+<body>
+    <header>
+        <h1>Hello</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="photo-gallery">
+            <div class="photo" onclick="goToNextPage()">
+                <img src="10img/IMG-20231114-WA0154.jpg" alt="Photo 1">
+                <p>selamat ulang tahun sayang, jangan merasa sendiri yah. ada saya selalu menemanimu, jangan ragu untuk berbagi cerita dan love you</p>
+            </div>
+            <div class="photo" onclick="goToNextPage()">
+                <img src="dia/IMG-20230830-WA0023.jpg" alt="Photo 2">
+                <p>hai cantik, masih ingat saat kita ketemu pertama kali tidak? ehm, ku tidak tau yah apakah itu bikin kamu bahagia atau tidak, tapi semoga iyaaa..</p>
+            </div>
+            <div class="photo" onclick="goToNextPage()">
+                <img src="dia/IMG-20231117-WA0234.jpg" alt="Photo 3">
+                <p>ku selalu berfikir, apakah hal yang ku lakukan bersamamu itu cukup untuk membuat ayang bahagia.</p>
+            </div>
+            <div class="photo" onclick="goToNextPage()">
+                <img src="dia/IMG-20231210-WA0038.jpg" alt="Photo 4">
+                <p>ku mau mencoba untuk selalu memberikan yang terbaik untuk ayang dengan caraku sendiri walaupun tidak tau itu berhasil atau tidak.. </p>
+            </div>
+            <div class="photo" onclick="goToNextPage()">
+                <img src="dia/IMG-20231210-WA0040.jpg" alt="Photo 5">
+                <p>kamu, yah kamu Tahta Meutya Zakia sayangku. selalu terlihat cantik dan selalu cantik di mataku. ku harap selalu seperti itu. banyak hal yang sudah kita lewati dan banyak hal yang juga telah kita buat bersama. maka dari itu berharap sekali ka kalau ayng menikmati itu semua. kamu cantik, indah, walaupun kata katanya sering toxic tapi di sisi lain aku sukaa.. untuk hari ini, ku mau ikuti apa yang ayang mau di hari spesial ini. karena blum ada sesuatu yang bisa ku kasih ke ayang. makanya apa yang ayng perintah sy cobaaa.. hihi</p>
+            </div>
+        </section>
+    </main>
+
+    <button class="back-button" onclick="goBack()">Kembali</button>
+
+    <script>
+        function goToNextPage() {
+            window.location.href = 'next_page.html';
+        }
+
+        function goBack() {
+            window.location.href = 'index1.html';
+        }
+    </script>
+</body>
+</html>

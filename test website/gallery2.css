@@ -1,0 +1,61 @@
+body {
+    background-color: purple;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9D76C1;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.photo p {
+    text-align: center;
+}
+.back-button {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video.css">
+    <title>Video Player Page</title>
+</head>
+<body>
+    <div class="video-container">
+        <div class="video">
+            <video controls>
+                <source src="video/VID-20231114-WA0198.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Caption 1</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="video/VID-20231106-WA0089.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Caption 2</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="video/VID-20231114-WA0199.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Caption 3</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="video/VID-20231117-WA0241.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Caption 4</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="video/VID-20231210-WA0002.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Caption 5</p>
+        </div>
+    </div>
+    <div class="back-button">
+        <button onclick="goBack()">Kembali</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index1.html';
+        }
+    </script>
+</body>
+</html>
